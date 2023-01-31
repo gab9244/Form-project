@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Speaker Submission</h1>
+    <p>Want to speak at our fake conference?</p>
+    <p>Fill out this form</p>
+    <form action="/" method="get">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <label>
+                Type of talk
+                <lable><input type="radio" name="talk"> Main Stage</lable>
+                <lable><input type="radio" name="talk"> Workshop</lable>
+            </label>
+        </div>
+        <div>
+            <label for="menu">T-Shirt Size</label>
+            <select name="" id="">
+                <option value="extra Small">Extra Small</option>
+                <option value="small">Small</option>
+                <option value="median">Median</option>
+                <option value="big">Big</option>
+                <option value="extra big">Extra Big</option>
+            </select>
+        </div>
+        <div>
+            Abstract
+            <textarea name="abstract" id="abstract" cols="30" rows="10" ></textarea> <p>Describe your talk in 500 words or less</p>
+        
+        </div>
+        <input type="checkbox" name="checkbox" id="checkbox">
+        <label for="checkbox">I'm actually available the date of the talk</label>
+        <button type="submit">Submit</button>
+    </form>
+    <script src="form.js"></script>
+</body>
+</html>
